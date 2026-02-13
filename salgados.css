@@ -1,0 +1,105 @@
+body {
+    background-image: url("Papel_Comidas_Salgadas.png");
+    background-size: cover;        /* cobre a tela inteira */
+    background-position: center;   /* centraliza */
+    background-repeat: no-repeat;  /* não repete */
+    background-attachment: fixed;  /* fundo parado */
+
+    margin: 0;
+}
+
+body {
+    font-family: 'Winter Draw', cursive;;
+    margin: 0;
+    padding: 0;
+    background-color: #ffc89b;
+    text-align: center;
+    
+}
+header {
+    background-color: #ff9844;
+    color: #ffffff;
+    padding: 30px 20px;
+
+}
+.pratos_salgados {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.pratos_salgados img {
+    margin: 30px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 480px;
+    height: 300px;      
+    object-fit: cover;   
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.pratos_salgados img:hover {
+    margin: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    transform: scale(1.05);
+}
+/* container das receitas */
+.pratos_salgados {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+/* card da receita */
+.receita {
+    position: relative;   /* permite posicionar o texto sobre a imagem */
+    display: inline-block;
+}
+
+/* imagem padrão */
+.receita img {
+    margin: 100px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* zoom da imagem */
+.receita:hover img {
+    transform: scale(1.05);
+}
+
+/* título escondido */
+.receita span {
+    position: absolute;
+    bottom: 15px;                 /* fica sobre a imagem embaixo */
+    left: 50%;
+    transform: translate(-50%, 10px); /* centraliza e começa deslocado */
+    
+    background: rgba(255, 178, 78, 0.719);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+
+    opacity: 0;                   /* começa invisível */
+    transition: 0.3s ease;        /* animação suave */
+}
+
+/* animação ao passar o mouse */
+.receita:hover span {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}

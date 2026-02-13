@@ -1,0 +1,150 @@
+/* Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Winter+Draw&display=swap');
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Variáveis */
+:root {
+    --azul: #788cff;
+    --azul-escuro: #4d67ff;
+    --creme: #dde2ff;
+}
+
+
+/* Fundo com Fade */
+body {
+    font-family: 'Winter Draw', cursive;
+
+    background-image: url("Papel_de_Parede_Doce.png");
+    background-size: cover;        /* cobre a tela inteira */
+    background-position: center;   /* centraliza */
+    background-repeat: no-repeat;  /* não repete */
+    background-attachment: fixed;  /* fundo parado */
+
+    margin: 0;
+}
+
+/* Topo */
+.topo {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.topo h1 {
+    font-size: 56px;
+    color: var(--azul-escuro);
+    letter-spacing: 2px;
+}
+
+.topo p {
+    font-size: 24px;
+    color: #272f7c;
+    margin-top: 10px;
+}
+
+
+/* Conteiner Principal */
+.container {
+    background: #c7cfff;
+    backdrop-filter: blur(6px);
+
+    width: 70%;
+    max-width: 1150px;
+
+    padding: 15px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 25px 60px #767ba8,
+        0 10px 25px #272f7c;
+    margin: 40px auto;    
+}
+
+
+/* Título Receita */
+.titulo-receita {
+    text-align: center;
+    font-size: 40px;
+    color: var(--azul-escuro);
+    margin-bottom: 50px;
+    position: relative;
+}
+
+/* linha decorativa */
+.titulo-receita::after {
+    content: "";
+    width: 90px;
+    height: 5px;
+    background: var(--azul);
+    display: block;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+
+/* Duas Colunas */
+.listas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+
+/* Cards */
+.box {
+    background: var(--creme);
+    padding: 40px;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 25px #262a52;
+
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 40px #262a52;
+}
+
+.box h3 {
+    font-size: 30px;
+    color: var(--azul-escuro);
+    margin-bottom: 25px;
+}
+
+
+/* Listas */
+ul, ol {
+    font-size: 22px;
+    line-height: 2;
+    color: #4a519c
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .listas {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .container {
+        padding: 40px;
+    }
+
+    .topo h1 {
+        font-size: 38px;
+    }
+}

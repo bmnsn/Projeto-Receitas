@@ -1,0 +1,123 @@
+        @import url(https://fonts.googleapis.com/css2?family=Winter+Draw&display=swap);
+
+        body {
+            font-family: 'Winter Draw', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(255, 224, 188);
+            text-align: center;
+        }
+
+        header {
+            font-size: large;
+            background-color: #ff914d;
+            color: rgb(255, 255, 255);
+            padding: 10px 10px;
+
+        }
+
+        .pratos_salgados {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+
+        .pratos_salgados img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .pratos_doces img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .Lasanha_à_Bolanhesa img,
+        .Frango_Grelhado_com_Arroz img,
+        .Escondidinho_de_Carne img,
+        .Macarrão_ao_Molho_Branco img,
+        .Omelete_Simples img {
+            width: 350px;
+
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s;
+
+        }
+
+        .pratos_salgados img:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 30px 20px;
+
+        }
+
+        .receitas {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .prato {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid rgb(255, 255, 255);
+            padding: 15px;
+            width: 150px;
+            border-radius: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff914d;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: rgb(255, 224, 188);
+            padding: 15px;
+            margin-top: 30px;
+        }
+
+        .pratos_doces {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 70px;
+        }
+
+        .Bolo_de_Chocolate img,
+        .Pudim img,
+        .Brigadeiro img,
+        .Mousse_de_Maracujá img,
+        .Panquecas img {
+            width: 350px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s;
+
+        }
+
+        .pratos_doces img:hover {
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 30px 20px;
+
+        }
