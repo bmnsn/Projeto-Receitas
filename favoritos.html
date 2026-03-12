@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comidas Favoritas</title>
+    <link rel="stylesheet" href="favoritos.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🤩 Comidas Favoritas</h1>
+        <p>Suas receitas salvas</p>
+
+        <a href="index.html" class="botao-voltar">Voltar para Receitas em Destaque</a>
+    </header>
+
+    <section>
+
+        <h2>Minhas Receitas Favoritas</h2>
+
+        <ul id="listaFavoritos"></ul>
+
+    </section>
+
+<script>
+
+let favoritos = JSON.parse(localStorage.getItem("favoritos")) || [];
+
+let lista = document.getElementById("listaFavoritos");
+
+favoritos.forEach(function(comida){
+
+    // evita itens vazios
+    if(!comida || !comida.nome) return;
+
+    let li = document.createElement("li");
+
+    let link = document.createElement("a");
+    link.textContent = comida.nome;
+    link.href = comida.link;
+
+    li.appendChild(link);
+    lista.appendChild(li);
+
+});
+
+</script>
+
+</body>
+</html>

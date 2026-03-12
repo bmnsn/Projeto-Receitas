@@ -103,3 +103,26 @@ header {
     opacity: 1;
     transform: translate(-50%, 0);
 }
+.botao-voltar{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:white;
+    color:#ff914d;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao-voltar:hover{
+    background-color:rgb(255, 224, 188);
+}
+li a{
+ text-decoration: none;
+ color: inherit;
+}
+li:hover {
+    background-color: #ff914d;
+}
+    

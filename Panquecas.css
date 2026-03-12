@@ -148,3 +148,20 @@ li {
         font-size: 38px;
     }
 }
+.btn-favorito{
+    display: block;
+    margin: 0 auto 30px auto;
+    padding: 12px 25px;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    background: var(--azul);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-favorito:hover{
+    background: var(--azul-escuro);
+    transform: scale(1.05);
+}

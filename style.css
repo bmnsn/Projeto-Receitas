@@ -121,3 +121,18 @@
             padding: 30px 20px;
 
         }
+        .botao-favoritos{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #ff914d;
+            border-radius: 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        
+        .botao-favoritos:hover{
+            background-color: #ffe0bc;
+            transform: scale(1.05);
+        }

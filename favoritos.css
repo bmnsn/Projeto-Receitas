@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css2?family=Winter+Draw&display=swap);
+
+body{
+    font-family: 'Winter Draw', cursive;
+    margin:0;
+    background-color: rgb(255, 224, 188);
+    text-align:center;
+}
+
+header{
+    background-color:#ff914d;
+    color:white;
+    padding:20px;
+}
+
+section{
+    padding:40px;
+}
+
+h2{
+    margin-bottom:30px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    background:white;
+    margin:10px auto;
+    padding:15px;
+    width:300px;
+    border-radius:10px;
+    font-size:20px;
+}
+
+.botao-voltar{
+    display:inline-block;
+    margin-top:15px;
+    padding:10px 20px;
+    background:white;
+    color:#ff914d;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao-voltar:hover{
+    background-color:rgb(255, 224, 188);
+}
+li a{
+ text-decoration: none;
+ color: inherit;
+}
+li:hover {
+    background-color: #ff914d;
+}
+    
